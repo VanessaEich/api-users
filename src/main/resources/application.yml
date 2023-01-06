@@ -1,0 +1,33 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  datasource:
+    url: jdbc:h2:mem:users;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: user
+    password: root123*
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+
+
+
+
+
+
+
+
+
+
+
